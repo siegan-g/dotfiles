@@ -1,0 +1,175 @@
+[colors]
+background = ${xrdb:background}
+foreground = ${xrdb:foreground}
+color1 = ${xrdb:color1}
+color2 = ${xrdb:color2}
+color3 = ${xrdb:color3}
+color4 = ${xrdb:color4}
+color5 = ${xrdb:color5}
+color6 = ${xrdb:color6}
+color8 = ${xrdb:color8}
+
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+[bar/toolbar]
+width = 100%
+height = 50
+;offset-y = 5%
+;offset-x = 30%
+padding = 1
+radius = 5.0
+fixed-center=false
+;override-redirect = true
+bottom = true
+
+enable-ipc = true
+
+font-0 = JetBrains Mono:pixelsize=12;2
+font-1 = octicons:pixelsize=9;2
+font-2 = Weather Icons:size=9;2
+font-3 = JetBrainsMono NerdFont:style=Solid:pixelsize=9;2
+font-4 = JetBrainsMono NerdFont:style=Solid:pixelsize=9;2
+
+;background = #00000000
+foreground = ${colors.foreground}
+
+modules-left = time xbacklight pulseaudio 
+modules-center =  i3
+modules-right =  wireless
+
+tray-position=right
+tray-padding = 1
+
+[module/mpd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6601
+format-online =   <label-song>
+format-online-background = ${colors.background}
+format-online-foreground = ${colors.color3}
+format-online-padding = 3
+
+label-song-foreground = ${colors.foreground}
+label-song = %title%
+label-song-maxlen = 40
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+sink = alsa_output.pci-0000_12_00.3.analog-stereo
+use-ui-max = true
+interval = 5
+
+format-volume =  <label-volume>
+format-muted = <label-muted>
+label-volume = %percentage%%
+label-muted = 
+label-muted-padding = 1
+
+format-volume-foreground = ${colors.color2}
+format-volume-background = ${colors.background}
+format-volume-padding = 2
+
+format-muted-foreground = ${colors.foreground}
+format-muted-background = ${colors.background}
+format-muted-padding = 2
+
+label-volume-foreground = ${colors.foreground}
+
+[module/time]
+type = internal/date
+time = "%I:%M %p"
+date = " %d/%m"
+
+format =  <label>
+format-foreground = ${colors.color4}
+format-background = ${colors.background}
+format-padding = 2;
+
+label = %time%
+label-foreground = ${colors.foreground}
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+label-font = 3
+
+ws-icon-0 = "1;1"
+ws-icon-1 = "2;2"
+ws-icon-2 = "3;3"
+ws-icon-3 = "4;4"
+ws-icon-4 = "5;5"
+ws-icon-5 = "6;6"
+;ws-icon-6 = "7;7"
+;ws-icon-7 = "8;8"
+
+index-sort = true
+wrapping-scroll = true
+strip-wsnumbers = true
+
+label-focused = "%icon%"
+label-focused-foreground = ${colors.color3}
+label-focused-padding = 2
+
+label-unfocused = "%icon%"
+label-unfocused-padding = 2
+label-unfocused-foreground = ${colors.color8}
+
+label-urgent = "%icon%"
+label-urgent-foreground = ${colors.color8}
+label-urgent-padding = 2
+
+label-visible = "%icon%"
+label-visible-padding = 2
+
+[module/cpu]
+type = internal/cpu
+
+format =  <label>
+label = %percentage%%
+
+format-foreground = ${colors.color5}
+format-background = ${colors.background}
+
+label-foreground = ${colors.foreground}
+format-padding = 2;
+
+
+[module/wireless]
+type = internal/network
+interface = wlp6s0
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 3.0
+
+format-connected =  <label-connected>
+format-connected-foreground = ${colors.color2}
+format-connected-padding = 2
+label-connected-foreground = ${colors.foreground}
+
+format-disconnected = Not connected
+label-connected = %downspeed:5%
+;%essid% %downspeed:9%
+
+
+[module/memory]
+type = internal/memory
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 3
+
+format =  <label>
+label = %percentage_used%%
+
+format-foreground = ${colors.color5}
+format-background = ${colors.background}
+
+label-foreground = ${colors.foreground}
+format-padding = 2;
