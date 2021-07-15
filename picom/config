@@ -22,7 +22,7 @@ vsync = "opengl-swc";
 #################################
 blur-background = true;
 blur-background-fixed = true;
-blur-strength = 8;
+blur-strength = 10;
 blur-background-exclude = [
   "name = 'Screenshot'",
   "class_i *= 'tray'",
@@ -65,7 +65,13 @@ active-opacity = 5;
 frame-opacity = 0.8;
 inactive-opacity-override = false;
 
-
+opacity-rule=[
+"92:class_g = 'Alacritty'",
+"92:class_g = 'Emacs'",
+"95:class_g = 'Thunar'",
+"95:class_g = 'discord'",
+"82:class_g = 'Rofi'"
+];
 
 #################################
 #       Fading

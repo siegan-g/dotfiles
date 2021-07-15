@@ -16,7 +16,7 @@ frame_color = "#9a9fa0"
 separator_color = "#20242d"
 sort = no
 idle_threshold = 120
-font = JetBrains Mono Regular Nerd Font 12  
+font = Inter Nerd Font 12
 line_height = 6
 notification_height = 1
 markup = full
@@ -32,7 +32,7 @@ icon_position = left
 max_icon_size= 80
 sticky_history = no
 history_length = 6
-browser = brave 
+browser = firefox
 always_run_script = true
 title = Dunst
 class = Dunst
@@ -49,22 +49,22 @@ close_all = ctrl+shift+space
 history = ctrl+Escape
 context = ctrl+shift+period
 
-urgency_low]
+[urgency_low]
 # IMPORTANT: colors have to be defined in quotation marks.
 # Otherwise the "#" and following would be interpreted as a comment.
-frame_color = "#1D918B"
-foreground = "#FFEE79"
+frame_color = "#85A6A4"
+foreground = "#FFFFFF"
 background = "#18191E"
 timeout = 5
 
 [urgency_normal]
-frame_color = "#D16BB7"
-foreground = "#FFEE79"
+frame_color = "#A6859A"
+foreground = "#FFFFFF"
 background = "#18191E"
 timeout = 10
 
 [urgency_critical]
-frame_color = "#FC2929"
-foreground = "#FFFF00"
+frame_color = "#F29B9B"
+foreground = "#FFFFFF"
 background = "#18191E"
 timeout = 10

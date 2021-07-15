@@ -89,7 +89,7 @@ bindsym $mod+shift+l exec ~/.i3/lock.sh
 # Open Rofi
 bindsym $mod+space exec "rofi -modi run,drun,window -show drun"
 bindsym $mod+Ctrl+space exec "rofi -modi run,drun,window -show run"
-bindsym $mod+Ctrl+w exec "rofi -modi run,drun,window -show window"
+bindsym Mod1+Tab exec "rofi -modi run,drun,window -cycle  -show window"
 
 
 ##########################################################
@@ -161,7 +161,7 @@ bindsym $mod+Shift+space floating toggle
 
 
 # Tabbed layout
-bindsym $mod+Shift+t layout tabbed
+#bindsym $mod+Shift+t layout tabbed
 bindsym $mod+grave exec "~/.config/i3/i3-switch-tabs right"
 bindsym $mod+Shift+grave exec "~/.config/i3/i3-switch-tabs left"
 
@@ -309,6 +309,8 @@ exec_always --no-startup-id "sleep 1"
 exec_always --no-startup-id "~/.config/polybar/launch.sh "
 #exec_always --no-startup-id polybar -r toolbar 
 
+# Eww Daemon
+exec --no-startup-id "~/.local/bin/eww daemon"
 
 # Set UTF-8
 exec_always --no-startup-id "localectl set-locale LANG=en_ZA.UTF-8"
@@ -335,7 +337,10 @@ exec_always --no-startup-id "nitrogen --restore"
 exec_always --no-startup-id "dunst -config ~/.config/dunst/dunstrc"
 
 # Picom
-exec_always --no-startup-id "picom -b -c --config ~/.config/picom/config  --blur-background --blur-method kawase --respect-prop-shadow"
+exec_always --no-startup-id "picom -b -c --config ~/.config/picom/config  --blur-background --blur-method dual-kawase --respect-prop-shadow --experimental-backends"
+
+#Eww
+bindsym $mod+e exec ~/.config/eww/launch_eww
 
 # Reposition Polybar
 exec_always --no-startup-id "xdo lower $(xdo id -n polybar); xdo raise $(xdo id -n tray)"

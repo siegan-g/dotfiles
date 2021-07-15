@@ -25,10 +25,11 @@ get_icon() {
 }
 
 # API key from openweathermap. Add yours by signing up there.
-API_KEY="fd2c04ed7f9802656bd2cc23bddc7ad9"
+API_KEY="3ad7ab6942867d838916f70a5b4336e0"
 # Get your lat and long. Just Google.
-LAT="26.111898"
-LON="91.797896"
+# -29.364679726122002, 30.632690565134624 - Cool Air
+LAT="-29.364679726122002"
+LON="30.632690565134624"
 UNITS="metric"
 SYMBOL="°C"
 

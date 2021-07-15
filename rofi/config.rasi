@@ -2,7 +2,7 @@ configuration {
   modi: "run,drun,window";
   width: 25;
   font: "JetBrains Mono 10";
-  terminal: "termite";
+  terminal: "alacritty";
   disable-history: false;
   sidebar-mode: true;
   tokenize: true;
