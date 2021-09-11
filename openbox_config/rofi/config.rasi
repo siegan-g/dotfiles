@@ -1,0 +1,74 @@
+configuration {
+  modi: "run,drun";
+  font: "Inter Nerd Font Regular 11";
+  terminal: "kitty";
+  disable-history: false;
+  sidebar-mode: true;
+  tokenize: true;
+  m: "-5";
+  window-format: "{w}{c}";
+  display-drun: "Apps";
+  display-run: "Run";
+}
+
+* {
+  /*bg: #0F1212;*/
+  bg: #272c38;
+  fg: #e3e3e3;
+  accent: #d89495;
+  button: #a7bdfb;
+  
+  background-color: @bg;
+  text-color: @fg;
+}
+
+window {
+  padding: 30px;
+  border-radius: 0px;
+  border:6px;
+  border-color:#272c38;
+  width:30%;
+}
+
+prompt, entry {
+  text-color: @fg;
+  padding: 8px;
+}
+
+
+entry {
+    border-radius : 0 4px 4px 0;
+    margin: 0 0 10px 0;
+}
+
+prompt {
+    background-color: @accent;
+    text-color: @bg;
+    border-radius: 4px 0 0 4px;
+    margin: 0 0 10px 0;
+}
+
+
+element-text {
+  border-radius: 2px;
+  padding: 6px 4px;
+  bckground-color: @bg;
+  text-color: @fg;
+}
+
+element-text selected {
+  background-color: @fg;
+  text-color: @bg;
+}
+
+button {
+    padding: 6px;
+    margin: 10px 0 0 0;
+}
+
+button selected {
+  background-color: @accent;
+  text-color: @bg;
+  border-radius: 2px;
+  padding: 4px;
+}
