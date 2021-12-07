@@ -1,0 +1,97 @@
+[colors]
+background = #2a2b33
+buffer = #4c566a
+foreground = #D8DEE9
+color1 = #ECEFF4
+color2 = #8FBCBB
+color3 = #88C0D0
+color4 = #81A1C1
+urgent = #BF616A
+warning = #D08770
+notify = #EBCB8B
+success = #A3BE8C
+function = #B48EAD
+
+[bar/mybar]
+width = 100%
+height = 30
+enable-ipc = true
+fixed-center = true
+override-redirect = false
+padding-left = 1
+foreground = ${colors.background}
+background = ${colors.foreground}
+
+modules-left = xwindow
+modules-right = pulseaudio memory cpu  date time 
+
+tray-position = right
+tray-padding = 0
+tray-background = ${colors.foreground}
+
+font-0 = Inter:style=bold:size=10;3
+font-1 = M+ 1mn:style=bold:pixelsize=22;2
+font-2 = Siji:pixelsize=13;1
+font-3 = Font Awesome 5 Free Solid:pixelsize=13;2
+font-4 = Font Awesome 5 Free:pixelsize=13;3
+font-5 = Font Awesome 5 Brands:pixelsize=13;3
+font-6 = FontAwesome:pixelsize=13;3
+font-7 = Iosevka Nerd Font:style=Medium:size=13;3
+
+
+
+[module/date]
+type = internal/date
+date = " %a, %d %b %Y"
+label =  %date%
+label-background = ${colors.foreground}
+label-foreground = ${colors.background}
+label-padding = 2
+
+
+[module/time]
+type = internal/date
+time =  %r
+label = "%time%"
+label-background = ${colors.foreground}
+label-foreground = ${colors.background}
+label-padding = 2
+
+
+[module/memory]
+type = internal/memory
+interval = 2
+#format-prefix = " "
+label =  %gb_used%
+format-background = ${colors.foreground}
+format-foreground = ${colors.background}
+format-padding = 2
+
+
+[module/pulseaudio]
+type = internal/pulseaudio
+interval = 5
+label-volume = " %percentage%%"
+format-volume-foreground = ${colors.background}
+format-volume-background = ${colors.foreground}
+
+format-volume-padding = 2
+label-muted = " 0%"
+format-muted-foreground = ${colors.foreground}
+format-muted-background = #e5746a
+format-muted-padding = 2
+
+[module/xwindow]
+type = internal/xwindow
+label=%title:0:30:...%
+
+[module/network]
+type = internal/network
+interface = enp1s0 
+#udspeed-minwidth = 3
+label-connected = "   %essid%  " 
+label-connected-foreground = ${colors.background}
+label-connected-background = ${colors.foreground}
+
+
+[module/updates-pacman-aurhelper]
