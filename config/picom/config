@@ -1,0 +1,50 @@
+# Animations
+transition-length = 200
+transition-pow-x = 0.5
+transition-pow-y = 0.5
+transition-pow-w = 0.5
+transition-pow-h = 0.5
+size-transition = true
+
+# Corners
+corner-radius = 1.0;
+round-borders = 1;
+rounded-corners-exclude=[
+	"class_g='Xfdesktop'",
+	"class_g='Xfce4-panel'",
+	"class_g='tray'",
+	"class_g='Polybar'"
+]
+
+# Shadows
+shadow = true;
+shadow-radius = 15;
+shadow-opacity = 0.8;
+shadow-offset-x = -20;
+shadow-offset-y = -5;
+shadow-ignore-shaped = true;
+shadow-exclude = [
+    "window_type = 'dock'",
+	"class_g='tray'",
+	"class_g='Polybar'"
+]
+
+# Fading
+fading = true;
+fade-delta = 3;
+fade-in-step = 0.03;
+fade-out-step = 0.03;
+
+# Transparency / Opacity
+inactive-opacity = 1.0;
+active-opacity = 1;
+frame-opacity = 1;
+
+# General Settings
+experimental-backends = true;
+backend = "xrender";
+vsync =false 
+use-damage = false
+log-level = "debug";
+
+# vim:ft=dosini

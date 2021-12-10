@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/siegan/Downloads/peakpx.jpg" added="2021-12-02T20:08:00.986125Z" modified="2021-12-02T20:08:00.986137Z" visited="2021-12-02T20:08:00.986127Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-02T20:08:00.986130Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Downloads/Reversal-blue.tar.xz" added="2021-12-03T09:40:54.570674Z" modified="2021-12-03T09:40:54.570682Z" visited="2021-12-03T09:40:54.570675Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xz-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-03T09:40:54.570678Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Downloads/Flatery.tar.gz" added="2021-12-03T10:03:55.769510Z" modified="2021-12-03T10:03:55.769519Z" visited="2021-12-03T10:03:55.769512Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-03T10:03:55.769514Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Downloads/WhiteSur.tar.xz" added="2021-12-03T10:20:11.933783Z" modified="2021-12-03T10:20:11.933790Z" visited="2021-12-03T10:20:11.933784Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xz-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-03T10:20:11.933787Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Pictures/333203_3159d2b10924f220014403cac6e61382.png" added="2021-12-03T10:21:02.803240Z" modified="2021-12-03T10:21:04.491831Z" visited="2021-12-03T10:21:02.803241Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-03T10:21:04.491827Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Downloads/WhiteSur" added="2021-12-03T10:23:15.992863Z" modified="2021-12-03T10:23:15.992874Z" visited="2021-12-03T10:23:15.992865Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="kvantummanager" exec="&apos;kvantummanager %u&apos;" modified="2021-12-03T10:23:15.992870Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Pictures/DRRKrXw.jpeg" added="2021-12-03T10:29:12.702201Z" modified="2021-12-03T10:29:14.396399Z" visited="2021-12-03T10:29:12.702202Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-03T10:29:14.396395Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Downloads/WhiteSur/WhiteSur.kvconfig" added="2021-12-03T10:41:48.251473Z" modified="2021-12-03T10:41:48.251481Z" visited="2021-12-03T10:41:48.251475Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-03T10:41:48.251477Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Downloads/hybrid.txt" added="2021-12-03T11:09:50.118445Z" modified="2021-12-03T11:09:50.118477Z" visited="2021-12-03T11:09:50.118467Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-03T11:09:50.118472Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Downloads/martin-adams-MpTdvXlAsVE-unsplash.jpg" added="2021-12-03T12:01:25.690544Z" modified="2021-12-03T12:01:25.690570Z" visited="2021-12-03T12:01:25.690551Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-03T12:01:25.690562Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Downloads/wallpaperflare.com_wallpaper.jpg" added="2021-12-03T12:12:56.431611Z" modified="2021-12-03T12:12:56.431639Z" visited="2021-12-03T12:12:56.431612Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-03T12:12:56.431636Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Screenshot_2021-12-03_15-38-25.png" added="2021-12-03T13:38:28.582357Z" modified="2021-12-03T13:38:28.582364Z" visited="2021-12-03T13:38:28.582359Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="xfce4-screenshooter" exec="&apos;xfce4-screenshooter %u&apos;" modified="2021-12-03T13:38:28.582361Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Screenshot_2021-12-03_15-39-29.png" added="2021-12-03T13:39:31.977889Z" modified="2021-12-03T13:39:31.977894Z" visited="2021-12-03T13:39:31.977890Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="xfce4-screenshooter" exec="&apos;xfce4-screenshooter %u&apos;" modified="2021-12-03T13:39:31.977892Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/code" added="2021-12-03T15:14:03.592344Z" modified="2021-12-03T15:14:03.592383Z" visited="2021-12-03T15:14:03.592346Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2021-12-03T15:14:03.592380Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Screenshot_2021-12-03_17-28-28.png" added="2021-12-03T15:28:31.362284Z" modified="2021-12-03T15:32:34.744991Z" visited="2021-12-03T15:28:31.362285Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="xfce4-screenshooter" exec="&apos;xfce4-screenshooter %u&apos;" modified="2021-12-03T15:28:31.362287Z" count="1"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-03T15:32:34.744972Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Pictures/690601.jpg" added="2021-12-03T22:43:14.205205Z" modified="2021-12-03T22:43:15.127653Z" visited="2021-12-03T22:43:14.205207Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-03T22:43:15.127647Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Downloads/sleepy-floaty" added="2021-12-07T00:58:49.078056Z" modified="2021-12-07T00:58:49.786477Z" visited="2021-12-07T00:58:49.078058Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-07T00:58:49.786471Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Downloads/sleepy-floaty.zip" added="2021-12-07T01:14:53.980236Z" modified="2021-12-07T01:14:53.980244Z" visited="2021-12-07T01:14:53.980238Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-07T01:14:53.980240Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/dotfiles" added="2021-12-07T16:06:37.590569Z" modified="2021-12-07T16:06:37.590579Z" visited="2021-12-07T16:06:37.590571Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2021-12-07T16:06:37.590574Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_siegan0/SWTM-2088_Atlassian-Git-Cheatsheet.pdf" added="2021-12-07T16:28:24.302186Z" modified="2021-12-07T16:28:24.302201Z" visited="2021-12-07T16:28:24.302189Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-07T16:28:24.302194Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Pictures/night.png" added="2021-12-07T18:44:57.082289Z" modified="2021-12-07T18:44:58.718700Z" visited="2021-12-07T18:44:57.082290Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-07T18:44:58.718694Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/.local/bin" added="2021-12-07T20:15:32.335332Z" modified="2021-12-07T20:15:32.335342Z" visited="2021-12-07T20:15:32.335334Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2021-12-07T20:15:32.335336Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_siegan0/macOS.png" added="2021-12-09T15:35:35.094022Z" modified="2021-12-09T15:35:35.094039Z" visited="2021-12-09T15:35:35.094024Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-09T15:35:35.094032Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Screenshot_2021-12-09_22-24-35.png" added="2021-12-09T20:24:39.531559Z" modified="2021-12-09T20:24:39.531568Z" visited="2021-12-09T20:24:39.531561Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="xfce4-screenshooter" exec="&apos;xfce4-screenshooter %u&apos;" modified="2021-12-09T20:24:39.531564Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Screenshot_2021-12-09_23-51-19.png" added="2021-12-09T21:51:22.726062Z" modified="2021-12-09T21:51:22.726072Z" visited="2021-12-09T21:51:22.726063Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="xfce4-screenshooter" exec="&apos;xfce4-screenshooter %u&apos;" modified="2021-12-09T21:51:22.726067Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Pictures/1243277b1af5390d1906318bd78ef51f.jpg" added="2021-12-09T21:57:27.539242Z" modified="2021-12-09T21:57:28.159123Z" visited="2021-12-09T21:57:27.539244Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-09T21:57:28.159119Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Pictures/be5888f837a783cf77b49d25ff73dff7.jpg" added="2021-12-09T22:00:17.377652Z" modified="2021-12-09T22:00:18.253985Z" visited="2021-12-09T22:00:17.377654Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-09T22:00:18.253958Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Screenshot_2021-12-10_00-00-42.png" added="2021-12-09T22:00:44.484468Z" modified="2021-12-09T22:00:44.484472Z" visited="2021-12-09T22:00:44.484468Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="xfce4-screenshooter" exec="&apos;xfce4-screenshooter %u&apos;" modified="2021-12-09T22:00:44.484470Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/startpage/index.html" added="2021-12-09T22:13:43.453560Z" modified="2021-12-09T22:13:43.453566Z" visited="2021-12-09T22:13:43.453561Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-09T22:13:43.453563Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Screenshot_2021-12-10_00-22-28.png" added="2021-12-09T22:22:32.007963Z" modified="2021-12-09T22:30:30.355406Z" visited="2021-12-09T22:22:32.007965Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="xfce4-screenshooter" exec="&apos;xfce4-screenshooter %u&apos;" modified="2021-12-09T22:22:32.007967Z" count="1"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-09T22:30:30.355399Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siegan/Screenshot_2021-12-10_00-23-34.png" added="2021-12-09T22:23:36.700882Z" modified="2021-12-09T22:30:30.355431Z" visited="2021-12-09T22:23:36.700884Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="xfce4-screenshooter" exec="&apos;xfce4-screenshooter %u&apos;" modified="2021-12-09T22:23:36.700887Z" count="1"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-12-09T22:30:30.355428Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

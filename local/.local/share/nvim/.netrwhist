@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/siegan/.themes/WhiteSur-light/metacity-1'
+let g:netrw_dirhist_7='/home/siegan/.themes/WhiteSur-light'
+let g:netrw_dirhist_6='/home/siegan/.themes/WhiteSur-light/xfwm4'
+let g:netrw_dirhist_5='/home/siegan/.themes/WhiteSur-light'
+let g:netrw_dirhist_4='/home/siegan/.themes/WhiteSur-light/gtk-2.0'
+let g:netrw_dirhist_3='/home/siegan/.themes/WhiteSur-light'
+let g:netrw_dirhist_2='/home/siegan/.themes/whitey/gtk-3.0'
+let g:netrw_dirhist_1='/home/siegan/.themes/whitey/xfwm4'
+let g:netrw_dirhist_0='/home/siegan/.themes/whitey'
+let g:netrw_dirhist_9='/home/siegan'

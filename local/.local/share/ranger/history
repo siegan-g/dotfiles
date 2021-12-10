@@ -1,0 +1,31 @@
+set_show_hidden true
+set show_hidden true
+fzf
+search theme
+search white
+search Pic
+open_with n
+open_with nv
+rename Screenshot_1.png
+open_with 
+remove
+open_with firefox
+open_with code
+
+mkdir .config
+search
+mkdir walls
+mkdir .themes
+mkdir .icons
+mkdir
+mkdir waifu
+delete
+search mkdir .mozilla
+mkdir .mozilla
+mkdir firefox
+mkdir xx.default-release
+mvc icons ~/.icons
+mv icons ~/.icons
+open_with nvim
+search Pictures
+search pic
