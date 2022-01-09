@@ -3,18 +3,22 @@
 Nothing special really
 
 ## Stuffs
-**Bar**:  polybar 
+**Bar**:  polybar
+
 **WM**: i3-gaps
+
 **Compositor**: jonaburg/picom patched to remove those artifacts with shadows + rounded corners https://aur.archlinux.org/packages/picom-arian8j2-git/
+
 **Term**: Kitty
+
 **Fetch**: BunnyFetch
+
 **ColourScheme**: rose-pine/rose-pine-dawn
 
 ## Day
-<img src = ../../assets/day.png />
-
+![](assets/day.png)
 ## Night
-<img src = ../../assets/night.png />
+![](assets/night.png)
 
 
 
