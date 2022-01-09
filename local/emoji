@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# dependency https://github.com/Mange/rofi-emoji
+rofi -show emoji -modi emoji -theme ~/.config/rofi/launchers/text/style_7.rasi
+

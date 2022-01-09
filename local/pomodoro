@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+for (( i=0; i<=$1; i++ ))
+do
+termdown -T "Get to work maggot" --no-figlet ${2}m;
+notify-send "Times up"
+paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
+termdown -T "break time" --no-figlet 10m;
+notify-send "Break time is over"
+paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
+done

@@ -1,0 +1,19 @@
+#!/bin/bash
+#Reference: https://felix-kling.de/blog/2021/linux-toggle-dark-mode.html 
+#change wallpaper
+feh --bg-scale ~/Pictures/walls/690601.jpg
+#Change icon
+#Change GTK theme
+sed -i s/rose-pine-dawn-gtk/rose-pine-gtk/ ~/.xsettingsd
+killall -HUP xsettingsd
+#change Kitty colour scheme
+kitty +kitten themes --reload-in=all Rosé Pine
+#change Rofi theme
+sed -i s/light.rasi/dark.rasi/ ~/.config/rofi/launchers/text/styles/colors.rasi
+sed -i s/light.rasi/dark.rasi/ ~/.config/rofi/applets/styles/colors.rasi
+# Change zathura theme 
+# TODO
+#Change polybar
+killall -9 polybar 
+polybar darkbar
+

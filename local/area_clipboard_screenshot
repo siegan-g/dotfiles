@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+rm ~/Pictures/screens/screen.tmp; # just being safe lmao
+touch ~/Pictures/screens/screen.tmp;
+
+maim -u -s 2>> ~/Pictures/screens/screen.tmp | xclip -selection clipboard -t image/png
+[ -s ~/Pictures/screens/screen.tmp ] && notify-send "Screenshot Cancelled" || notify-send "Screenshot Taken"
+
+rm ~/Pictures/screens/screen.tmp;
