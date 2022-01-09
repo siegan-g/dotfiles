@@ -1,0 +1,15 @@
+/* Light */
+
+*{
+al:	#000000;
+bg:	#191724;
+se:	#f5f5f5;
+fg:	#e0def4;
+ac:	#e0def4;
+red:	#b4637a;
+green:	#56949f;
+yellow:	#ea9d34;
+blue:	#286983;
+purple:	#907aa9;
+cyan:	#d7827e;
+}

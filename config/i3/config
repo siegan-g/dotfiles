@@ -1,0 +1,224 @@
+##########################################################################
+#		 							                                                       #
+#		 							                                                       #
+#		i3-Gaps - Because Im too lazy for BSPWM ヽ(*・ω・)ﾉ                  #
+#		 							                                                       #
+#		 		 					                                                       #
+##########################################################################
+
+
+##########################################################################
+# 1. modkey n shit						 	 #
+##########################################################################
+	
+set $mod Mod4
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+# font - set to zero to hide title in tabbed
+# see picom config to set opacity to 0 
+font pango:Iosevka Term 0
+
+###########################################################################
+# 2. Autostart - Most are in my .xinitrc               			             #
+###########################################################################
+
+exec --no-startup-id dex --autostart --environment i3
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock 
+###########################################################################
+# 3. Function Keys							                                          #
+###########################################################################
+
+##############
+# 3.1 Volume #
+##############
+
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+##################
+# 3.2 Brightness #
+##################
+bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+
+#########################
+# 3.3 Print/ Screenshot #
+#########################
+# Save entire screen to folder
+bindsym --release Print exec maim ~/Pictures/screens/$(date +%s%N).png && notify-send "Screenshot taken"
+# '' to clipboard
+bindsym --release Control+Print exec maim | xclip -selection clipboard -t image/png && notify-send "Screenshot taken"
+# Save selected area to folder
+bindsym --release Shift+Print exec ~/.local/bin/area_folder_screenshot
+# '' to clipboard
+bindsym --release Shift+Control+Print exec ~/.local/bin/area_clipboard_screenshot
+
+############################################################################
+# 4.  Window Stuff							   #
+############################################################################
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+##################
+# 4.1 Kill       #
+##################
+
+bindsym $mod+Shift+q kill
+
+##################
+# 4.2 Focus      #
+##################
+
+bindsym $mod+s focus down 
+bindsym $mod+w focus up 
+bindsym $mod+a focus left 
+bindsym $mod+d focus right
+
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# focus the parent container
+#bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+##################
+# 4.3 Movement   #
+##################
+# If a window is tiled -> it will switch places
+# If it is floating it will move x,y position
+bindsym $mod+Shift+s move down 
+bindsym $mod+Shift+w move up
+bindsym $mod+Shift+a move left 
+bindsym $mod+Shift+d move right
+
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+
+
+##################
+# 4.4 Fullscreen #
+##################
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+########################
+# 4.5 Container Layout #
+########################
+
+#bindsym $mod+semicolon layout tabbed
+bindsym $mod+space layout toggle split
+
+bindsym $mod+t floating toggle
+
+# Split next tiled window into horizontal orientation
+bindsym $mod+h split h
+
+# '' vertical ''
+bindsym $mod+v split v
+
+########################
+# 4.6  Resize          #
+########################
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym j resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
+
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal:         
+	bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+########################
+# 4.7  Gaps            #
+########################
+gaps outer 10
+gaps inner 10
+########################
+# 4.8  Other           #
+########################
+
+for_window[class="^.*"] border pixel 0 
+# float by default
+#for_window[class="^.*"] floating enable
+
+############################################################################
+# 5. Workspaces							           #  
+############################################################################
+
+########################
+# 5.1  Set             #
+########################
+
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+
+##########################
+# 5.2  Move To           #
+##########################
+
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+
+############################################
+# 5.3  Move Focused Container To           #
+############################################
+
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+
+
+############################################################################
+# 6. Applications						           #  
+############################################################################
+
+
+############################################
+# 6.1  Terminal				   #
+############################################
+bindsym $mod+Return exec kitty
+
+
+############################################
+# 6.2  Rofi				   #
+############################################
+bindsym $mod+g exec ~/.local/bin/launcher
+bindsym $mod+Shift+g exec ~/.local/bin/ssh
+bindsym Mod1+Tab exec ~/.local/bin/window
+bindsym $mod+comma exec ~/.local/bin/emoji
+bindsym $mod+Shift+e exec ~/.local/bin/menu_powermenu 

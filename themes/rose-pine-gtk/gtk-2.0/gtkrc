@@ -612,7 +612,7 @@ style "xfdesktop-icon-view" {
 }
 
 style "xfwm-tabwin" {
-	Xfwm4TabwinWidget::border-width = 1
+	Xfwm4TabwinWidget::border-width = 0
         Xfwm4TabwinWidget::border-alpha = 1.0
 	Xfwm4TabwinWidget::icon-size = 64
         Xfwm4TabwinWidget::alpha = 1.0
