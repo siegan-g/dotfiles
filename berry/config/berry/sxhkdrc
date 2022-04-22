@@ -1,0 +1,133 @@
+
+##---------- Keybindings for berry ----------##
+
+# Terminal (kitty)
+super + Return
+  kitty
+
+# Terminal (floating)
+#super + shift + Return
+#	$SHELL ~/.config/berry/bin/berryterm.sh -s
+
+##---------- Rofi Launcher & Menus ----------##
+
+# Rofi App Launcher
+alt + F1
+	$SHELL ~/.config/rofi/bin/runner
+
+super + Tab
+  ~/.config/rofi/bin/window
+
+super + s
+  ~/.config/rofi/bin/screenshot
+
+super +  F12
+  ~/.config/rofi/bin/powermenu
+##---------- Applications ----------##
+
+# Launch Apps
+super + {f,e}
+	{nautilus,code}
+
+# Terminal Apps
+ctrl + alt + {v,r,h}
+	kitty -e {nvim,ranger,htop}
+
+# Lockscreen
+super + l
+  betterlockscreen -l dim
+
+##---------- System Keys ----------##	
+
+# Take screenshot to folder
+super + Print
+  $SHELL maim ~/Pictures/screens/$date +%s%N).png && notify-send "Screenshot Taken"
+
+# Take screenshot to clipboard
+super + ctrl + Print
+  $SHELL maim | xclip -selection clipboard -t image/png && notify-send "Screenshot taken"
+  
+
+# Take area screenshot to folder
+super + shift + Print
+  $SHELL area_folder_screenshot
+
+# Take screenshot area to clip
+super + shift + ctrl + Print
+  $SHELL area_clipboard_screenshot
+
+# Brighness control
+XF86MonBrightness{Up,Down}
+	brightnessctl{ s 5%+, s 5%-}
+	
+# Volume control
+XF86Audio{RaiseVolume,LowerVolume}
+	pactl{ set-sink-volume @DEFAULT_SINK@ +10%, set-sink-volume @DEFAULT_SINK@ -10%}
+
+XF86AudioMute
+	pactl set-source-mute @DEFAULT_SOURCE toggle
+	
+# Music control
+XF86Audio{Next,Prev,Play,Stop}
+	mpc {next,prev,toggle,stop}
+
+# Reload sxhkd configuration file
+super + Escape
+	pkill -USR1 -x sxhkd
+
+##---------- Berry Hotkeys --------##
+
+super + shift +  {Left, Down, Up, Right}
+    berryc window_resize {-50 0, 0 50, 0 -50, 50 0}
+
+super + ctrl + {Left, Down, Up, Right}
+    berryc window_move {-50 0, 0 50, 0 -50, 50 0}
+
+super + Left
+    berryc snap_left
+
+super +  Right
+    berryc snap_right
+
+super +  Up
+    berryc window_monocle
+
+super +  Down
+    berryc window_resize_absolute 1000 650 && berryc window_center
+
+super + {1-9}
+    berryc switch_workspace {0-9}
+
+super + 0 
+    berryc switch_workspace 9
+
+super + shift + {1-9}
+    berryc send_to_workspace {0-9}
+
+super + shift + 0 
+    berryc send_to_workspace 9 
+
+super + space
+    berryc fullscreen
+
+super + t
+    berryc toggle_decorations
+
+alt + Tab
+    berryc cycle_focus
+
+super + c
+    berryc window_center
+
+super + q
+    berryc window_close
+
+#super + shift + c
+#    berryc window_close
+
+super + shift + alt + q
+    berryc quit
+
+# Mouse Buttons
+~button1
+    berryc pointer_focus

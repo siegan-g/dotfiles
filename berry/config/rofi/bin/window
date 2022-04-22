@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+dir="$HOME/.config/rofi/themes/"
+rofi -no-lazy-grab -show window -modi window -theme $dir/"runner.rasi"

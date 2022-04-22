@@ -1,0 +1,378 @@
+
+;; taskbar for windows
+[module/polywins]
+type = custom/script
+exec = ~/.config/polybar/scripts/darkpolywins.sh 2>/dev/null
+format = <label>
+label = %output%
+label-background = ${colors.background}
+label-foreground= ${colors.foreground}
+label-padding = 1
+tail = true
+
+
+[module/berrywm]
+type = internal/xworkspaces
+pin-workspaces = true
+enable-click = true
+
+enable-scroll = false 
+format-padding = 0
+
+icon-default = 
+
+format = <label-state>
+format-background = ${color.rounds}
+
+;label-occupied =  
+label-active = 󰮯
+label-occupied = 
+label-urgent = 
+label-empty = 
+
+label-empty-padding = 1
+label-active-padding = 1
+label-urgent-padding = 1
+label-occupied-padding = 1
+
+label-empty-foreground = ${colors.text}
+label-empty-background = ${colors.color8}
+
+label-active-foreground =  ${colors.color11}
+label-active-background = ${colors.color8}
+
+label-urgent-foreground = ${colors.color9}
+label-urgent-background = ${colors.color8}
+
+label-occupied-foreground =  ${colors.color10}
+label-occupied-background = ${colors.color8}
+
+;;##### empty spaces and accessories #####################
+[module/space]
+type = custom/text
+content =  " "
+
+[module/space1]
+type = custom/text
+content =  " "
+content-background = ${colors.color8}
+
+[module/dot]
+type = custom/text
+content = 
+content-foreground = ${colors.BGL}
+content-padding = 1
+content-font = 4
+
+[module/dot-alt]
+inherit = module/dot
+content-foreground = ${colors.BLUEGRAY}
+
+[module/left]
+type = custom/text
+
+content = %{T2}%{T-}
+content-foreground = ${colors.color8}
+
+[module/right]
+type = custom/text
+
+content = %{T2}%{T-}
+content-foreground = ${colors.color8}
+
+[module/left-color]
+type = custom/text
+
+content = %{T2}%{T-}
+content-foreground = ${colors.color1}
+
+[module/right-color]
+type = custom/text
+
+content = %{T2}%{T-}
+content-foreground = ${colors.color1}
+contentfont = 10
+
+;; #####################################################
+
+[module/updates]
+type = custom/script
+exec = checkupdates | wc -l
+format = <label>
+interval = 4600 
+label =  %output% updates
+label-padding = 2
+label-foreground = #BF616A
+
+[module/pkg]
+type = custom/script
+exec = $HOME/polybar/scripts/updates.sh
+;exec-if = "ping -q -w 2 -c 1 176.34.135.167 > /dev/null"
+;label = %{A1:kitty -e "aurman -Syyu" & disown:} %{A3:kitty -e "aurman -Syyu" & disown:}%output%%{A} %{A}
+tail = true
+
+[module/powermenu]
+type = custom/text
+content = 
+content-padding = 2
+content-background = ${colors.color1}
+content-foreground = ${colors.background}
+click-left = $HOME/.config/polybar/scripts/sysmenu
+click-right = $HOME/.config/polybar/scripts/sysmenu
+
+[module/date]
+type = internal/date
+time =   %I:%M
+time-alt = %d-%m-%Y
+format = <label>
+label = %time%
+format-background = ${colors.color8}
+format-foreground = ${colors.color11}
+
+[module/popup-calendar]
+type = custom/script
+exec = ~/.config/polybar/scripts/popup-calendar.sh
+interval = 5
+click-left = ~/.config/polybar/scripts/popup-calendar.sh --popup &
+format-background = ${colors.color9}
+format-foreground = ${colors.date}
+
+[module/dunst]
+type = custom/ipc
+initial = 1
+format-foreground = ${colors.foreground}
+format-background = ${colors.color8}
+;format-padding = 1
+
+hook-0 = echo "%{A1:notify-send "DUNST_COMMAND_PAUSE" && polybar-msg hook dunst 2:}   %{A}" &
+hook-1 = echo "%{A1:notify-send "DUNST_COMMAND_RESUME" && polybar-msg hook dunst 1:} %{F#3b4252}   %{F-} %{A}" &
+
+[module/updates-pacman-aurhelper]
+type = custom/script
+exec = ~/.config/polybar/scripts/updates-pacman-aurhelper.sh
+interval = 600
+format-background = ${colors.color8}
+format-foreground = ${colors.color1}
+
+[module/info-cava]
+type = custom/script
+exec = ~/.config/polybar/scripts/info-cava.py -f 24 -b 12 -e fffdfc,fffafe,ffeafa,ffc3d2 -c average
+tail = true
+
+
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 98
+
+format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity>  <label-discharging>
+format-full =   <label-full>
+label-charging = %percentage%%
+label-discharging = %percentage%%
+
+format-charging-foreground = ${colors.color10}
+format-discharging-foreground = ${colors.color10}
+format-full-foreground = ${colors.color10}
+format-charging-background = ${colors.color8}
+format-discharging-background = ${colors.color8}
+format-full-background = ${colors.color8}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume = <ramp-volume> <label-volume>
+format-muted-prefix = ﱝ
+label-muted = " Muted"
+format-volume-foreground = ${colors.color6}
+format-muted-foreground = ${colors.color6}
+format-volume-background = ${colors.color8}
+format-muted-background = ${colors.color8}
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 墳
+ramp-volume-3 = 
+
+[module/backlight]
+
+type = internal/backlight
+card = intel_backlight
+enable-scroll = true
+format =   <label>
+label = %percentage%%
+format-foreground = ${colors.color11}
+format-background = ${colors.color8}
+
+
+[module/cpu1]
+type = internal/cpu
+
+format =  <bar-load>
+format-foreground = ${colors.color4}
+bar-load-width = 8
+bar-load-indicator =
+bar-load-fill = ━
+bar-load-fill-foreground = ${colors.color4}
+bar-load-empty = ━
+bar-load-empty-foreground = ${colors.foreground}
+
+[module/memory1]
+type = internal/memory
+interval = 3
+
+format =  <bar-used>
+label = %percentage_used%%
+format-foreground = ${colors.color5}
+format-margin = 1
+bar-used-width = 8
+bar-used-indicator =
+bar-used-fill = ━
+bar-used-fill-foreground = ${colors.color5}
+bar-used-empty = ━
+bar-used-empty-foreground = ${colors.foreground}
+
+[module/mpd]
+type = internal/mpd
+
+format-online =  <label-song> <bar-progress>
+format-offline = <label-offline>
+label-song = %artist% - %title%
+label-offline =   
+format-stopped = 
+label-song-maxlen = 30
+format-online-foreground = ${colors.color3}
+label-song-foreground = ${colors.foreground}
+format-online-margin = 1
+label-offline-foreground = ${color.foreground}
+label-offline-background = ${colors.color8}
+
+format-offline-foreground = ${color.foreground}
+foramt-offline-background = ${colors.color8}
+
+bar-progress-width = 10
+bar-progress-indicator =
+bar-progress-fill = ━
+bar-progress-fill-foreground = ${colors.color3}
+bar-progress-empty = ━
+bar-progress-empty-foreground = ${colors.foreground}
+
+[module/power]
+type = custom/text
+content = " "
+content-foreground = ${color.text}
+click-left = ~/.config/rofi/bin/powermenu
+
+[module/memory]
+type = internal/memory
+
+interval = 5
+format = <label>
+format-prefix = " "
+format-padding = 0
+format-foreground = ${colors.color13}
+format-background = ${colors.color8}
+label = "%percentage_used%%"
+
+[module/cpu]
+type = internal/cpu
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 2
+
+; Available tags:
+;   <label> (default)
+;   <bar-load>
+;   <ramp-load>
+;   <ramp-coreload>
+;;format = <label> <ramp-coreload>
+format = <label>
+format-foreground = ${colors.color13}
+format-background = ${colors.color8}
+format-prefix = " "
+format-padding = 0
+format-font = 3
+
+[module/alsa]
+type = internal/alsa
+format-volume = <label-volume> <bar-volume>
+label-volume = %{T2} %{T-}
+label-volume-foreground = ${colors.foreground}
+
+format-muted = <label-muted> <bar-volume>
+format-muted-foreground = ${colors.foreground}
+label-muted = %{T2} %{T-}
+
+
+format-muted-padding = 1
+format-muted-background = #1e222a
+
+bar-volume-width = 10
+bar-volume-foreground-0 = #61afef
+bar-volume-foreground-1 = #61afef
+bar-volume-foreground-2 = #61afef
+bar-volume-foreground-3 = #61afef
+bar-volume-foreground-4 = #61afef
+bar-volume-foreground-5 = #61afef
+bar-volume-foreground-6 = #61afef
+bar-volume-gradient = false
+bar-volume-indicator = 
+bar-volume-indicator-foreground = #61afef
+bar-volume-indicator-font = 4
+bar-volume-fill = %{T2}━%{T-} 
+bar-volume-fill-foreground = #61afef
+bar-volume-fill-font = 4
+bar-volume-empty = %{T2}━%{T-}
+bar-volume-empty-font = 3
+bar-volume-empty-foreground = ${colors.foreground}
+format-volume-padding = 1
+
+[module/network]
+type = internal/network
+interface = wlo1
+
+interval = 5.0
+
+accumulate-stats = true
+
+unknown-as-up = true
+
+label-connected = "%{A1:~/.config/i3/rofi/bin/network_menu &:}"
+label-connected-foreground = ${color.foreground}
+label-connected-background = ${color.background}
+format-connected = <ramp-signal><label-connected>
+format-connected-foreground = ${color.foreground}
+foramt-connected-background = ${colors.background}
+
+label-disconnected = "睊"
+label-disconnected-foreground = ${color.foreground}
+label-disconnected-background = ${colors.color8}
+
+format-disconnected = <label-disconnected>
+format-disconnected-foreground = ${color.foreground}
+foramt-disconnected-background = ${colors.color8}
+
+ramp-signal-0 = "󰤪"
+ramp-signal-1 = "󰤪"
+ramp-signal-2 = "󰤪"
+ramp-signal-3 = "󰤪"
+ramp-signal-4 = "󰤪"
+
+ramp-signal-foreground = ${color.foreground}
+ramp-signal-background = ${colors.color8}
+ramp-signal-font = 2

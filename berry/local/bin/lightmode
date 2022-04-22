@@ -1,0 +1,22 @@
+#!/bin/bash
+#Reference: https://felix-kling.de/blog/2021/linux-toggle-dark-mode.html 
+# ヽ(・∀・)ﾉ because I nothing about sed
+#change wallpaper
+feh --bg-scale ~/Pictures/walls/martin-adams-MpTdvXlAsVE-unsplash.jpg
+#Change icon
+# TODO
+#Change GTK theme
+sed -i s/rose-pine-gtk/rose-pine-dawn-gtk/ ~/.xsettingsd
+sed -i s/Flatery-Indigo-Dark/Flatery-Indigo/ ~/.xsettingsd
+killall -HUP xsettingsd
+# Change Rofi theme
+sed -i s/dark.rasi/light.rasi/ ~/.config/rofi/launchers/text/styles/colors.rasi
+sed -i s/Net\/IconThemeName \"Flatery-Indigo-Dark\"/Net\/IconTheme \"Flatery-Indigo\"/ ~/.xsettingsd
+#change Kitty colour scheme
+kitty +kitten themes --reload-in=all Aquarium Light
+#change zathura theme
+# TODO
+#polybar
+killall -9 polybar 
+polybar mybar 
+

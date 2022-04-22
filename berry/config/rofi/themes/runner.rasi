@@ -1,0 +1,203 @@
+configuration {
+    location: 						8;
+    fixed-num-lines: 				false;
+    show-icons: 					true;
+    sidebar-mode: 					true;
+    scroll-method: 					1;
+    window-format: 					"[{w}] | {c} | {t}";
+    click-to-exit: 					true;
+    combi-hide-mode-prefix: 		true;
+}
+
+@import "colors.rasi"
+
+* {
+    font:                           "FiraCode Nerd Font 10";
+    background-color:             	@background;
+}
+window {
+    transparency:                   "real";
+    background-color:               @background;
+    text-color:                     @foreground;
+	border:							0px;
+	border-color:					@border;
+    border-radius:                  14px;
+	width:							38%;
+    location:                       north;
+    x-offset:                       0;
+    y-offset:                       50;
+}
+
+entry {
+    background-color:               @background;
+    text-color:                     @foreground;
+    placeholder-color:              @foreground;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "Search";
+    padding:                        -0.15% 0% 0% 0%;
+    blink:                          true;
+}
+
+inputbar {
+	children: 						[ entry ];
+    background-color:               @background;
+    text-color:                     @foreground;
+    expand:                         false;
+	border:							0.1%;
+    border-radius:                  100%;
+	border-color:					@accent;
+    margin:                         0% 0% 0% 0%;
+    padding:                        1%;
+}
+
+
+listview {
+    background-color:               @background-alt;
+    columns:                        1;
+    lines:                          5;
+    spacing:                        0.5%;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @background-alt;
+	border:							0% 0% 0% 0%;
+    border-radius:                  0% 0% 0% 0%;
+	border-color:					@accent;
+    children:                       [ inputbar , listview ];
+    spacing:                       	1%;
+    padding:                        1% 0.5% 1% 0.5%;
+}
+
+element-icon {
+    background-color: 				inherit;
+    text-color:       				inherit;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    size:                           24px;
+    border:                         0px;
+}
+
+element-text {
+    background-color: 				inherit;
+    text-color:       				inherit;
+    expand:                         true;
+    horizontal-align:               0;
+    vertical-align:                 0.5;
+    margin:                         2px 0px 2px 10px;
+}
+
+
+element {
+    border: 						0px;
+    padding: 						6px;
+}
+element normal.normal {
+    background-color: 				@background-alt;
+    text-color:       				@foreground;
+    border: 						0px;
+    border-radius: 					100%;
+    border-color: 					@selected;
+}
+element normal.urgent {
+    background-color: 				@background-alt;
+    text-color:       				@off;
+    border: 						0px;
+    border-radius: 					100%;
+    border-color: 					@selected;
+}
+element normal.active {
+    background-color: 				@off;
+    text-color:       				@foreground;
+    border: 						0px;
+    border-radius: 					100%;
+    border-color: 					@selected;
+}
+element selected.normal {
+    background-color: 				@on;
+    text-color:       				@foreground;
+    border: 						0px;
+    border-radius: 					100%;
+    border-color: 					@selected;
+}
+element selected.urgent {
+    background-color: 				@background-alt;
+    text-color:       				@off;
+    border: 						0px;
+    border-radius: 					100%;
+    border-color: 					@selected;
+}
+element selected.active {
+    background-color: 				@off;
+    text-color:       				@background;
+    border-radius: 					100%;
+    border-color: 					@selected;
+}
+element alternate.normal {
+    background-color: 				@background-alt;
+    text-color:       				@foreground;
+    border: 						0px;
+    border-radius: 					100%;
+    border-color: 					@selected;
+}
+element alternate.urgent {
+    background-color: 				@background;
+    text-color:       				@foreground;
+    border: 						0px;
+    border-radius: 					100%;
+    border-color: 					@selected;
+}
+element alternate.active {
+    background-color: 				@background;
+    text-color:       				@foreground;
+    border: 						0px;
+    border-radius: 					100%;
+    border-color: 					@selected;
+}
+
+sidebar {
+    border:       					0px;
+    border-color: 					@background-alt;
+    border-radius: 					0px;
+}
+
+button {
+    margin: 						5px 10px 0px 10px;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    padding: 						10px;
+    background-color:             	@background-alt;
+    text-color: 					@foreground;
+    border: 						0px;
+    border-radius: 					100%;
+    border-color: 					@selected;
+}
+
+button selected {
+    background-color:             	@selected;
+    text-color: 					@background;
+    border: 						0px;
+    border-radius: 					100%;
+    border-color: 					@selected;
+}
+
+scrollbar {
+    width:        					4px;
+    border:       					0px;
+    handle-color: 					@foreground;
+    handle-width: 					8px;
+    padding:      					0;
+}
+
+message {
+    border: 						0px;
+    border-color: 					@selected;
+    padding: 						1px;
+}
+
+textbox {
+    text-color: 					@foreground;
+}

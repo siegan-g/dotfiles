@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+# ~/.xprofile
+ export _JAVA_AWT_WM_NONREPARENTING=1
+ picom -b -c --config ~/.config/picom/config &
+ sxhkd -c $HOME/.config/berry/sxhkdrc &

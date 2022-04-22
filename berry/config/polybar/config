@@ -1,0 +1,45 @@
+;; ##import files##
+include-file = ~/.config/polybar/modules
+include-file = ~/.config/polybar/colors
+
+[bar/berrybar]
+
+;; ##positions & dimensions ##
+override-redirect = false
+enable-ipc = true
+cursor-click = pointer 
+cursor-scroll = ns-resize
+true-center = true
+width = 100%
+height = 21
+radius = 0 
+padding = 0 
+line-size = 3 
+border-top-size = 5 
+border-top-color = ${colors.background}
+border-bottom-size = 5
+border-bottom-color = ${colors.background}
+
+;; ##modules##
+modules-left = space space left-color popup-calendar right-color
+modules-center = left berrywm right
+modules-right =  space left pulseaudio right space left dunst right space left battery right space left backlight right space space power space
+
+;; ##fonts##
+font-0 = FiraCode Nerd Font:style=Medium:size=13;3
+font-1 = Material Design Icons Desktop:style=Regular:size=13;3
+font-2 = Font Awesome 5 Free Solid:pixelsize=13;2
+font-3 = Font Awesome 5 Free:pixelsize=13;3
+font-4 = Font Awesome 5 Brands:pixelsize=13;3
+font-5 = FontAwesome:pixelsize=13;3
+font-6 = Font Awesome 5 Free Regular:pixelsize=13;2
+
+;; colors 
+background = ${colors.background}
+
+;; tray
+tray-position = right
+tray-padding = 5
+tray-background = ${colors.background}
+tray-maxsize = 26
+tray-detached = false

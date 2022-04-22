@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+
+DIR="$HOME/.config/rofi/themes/"
+
+rofi \
+  -combi-modi drun,run,emoji \
+	-show combi \
+	-modi run,drun \
+	-no-lazy-grab \
+	-scroll-method 0 \
+	-drun-match-fields all \
+	-drun-display-format "{name}" \
+	-no-drun-show-actions \
+	-terminal kitty \
+	-kb-cancel Alt-F1 \
+	-theme "$DIR"/runner.rasi

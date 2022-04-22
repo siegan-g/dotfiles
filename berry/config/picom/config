@@ -1,0 +1,69 @@
+# Animations
+transition-length = 300
+transition-pow-x = 0.6
+transition-pow-y = 0.6
+transition-pow-w = 0.6
+transition-pow-h = 0.6 
+size-transition = true
+
+# Corners
+corner-radius = 12.0;
+round-borders = 10.0;
+
+rounded-corners-exclude=[
+	"class_g='tray'",
+	"class_g='Polybar'",
+	"class_g='i3-frame'",
+  "class_g='Dunst'"
+]
+
+# Shadows
+shadow = true;
+shadow-radius = 14;
+shadow-opacity = 0.30;
+shadow-offset-x = 0;
+shadow-offset-y = 0;
+#shadow-ignore-shaped = false;
+shadow-exclude = [
+    "window_type = 'dock'",
+	"class_g='tray'",
+	"class_g='Polybar'",
+	"class_g='i3-frame'"
+]
+
+# Fading
+fading = true;
+fade-delta = 5; 
+fade-in-step = 0.03;
+fade-out-step = 0.03;
+
+# Transparency / Opacity
+inactive-opacity = 1.0;
+active-opacity = 1;
+frame-opacity = 1.0;
+opacity-rule = [
+"0:class_g ='i3-frame'"
+#"70:class_g ='Rofi'",
+#"70:class_g ='Polybar'"
+#"85:class_g='Dunst'" opacity is overwritten in dunst
+];
+
+# Blur - Disabled to minimise memory usage
+#blur: {
+#  method = "kawase";
+#  strength = 8;
+#  background = false;
+#  background-frame = false;
+#  background-fixed = false;
+#}
+#
+#blur-background-exclude = [
+#  "class_g = 'slop'" # Don't blur maim 
+#];
+
+# General Settings
+experimental-backends = true;
+backend = "glx"; #required by kawase and dual-kawase
+vsync = true 
+use-damage = false
+log-level = "debug";
