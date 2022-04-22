@@ -3,7 +3,7 @@
 
 A big old mess <br/>
 ... <br/>
-My nvim config doesnt have lazy loading because I got tired of configuring it 🥴 
+My nvim config doesn't have lazy loading because I got tired of configuring it 🥴 
 
 ## i3-Gaps
 
@@ -21,7 +21,7 @@ My nvim config doesnt have lazy loading because I got tired of configuring it �
 
 * Colour Scheme - Nord 
 * WM - Berry
-* 
+
 <img src = berry/assets/screen_1.png>
 <img src = berry/assets/screen_2.png>
 
