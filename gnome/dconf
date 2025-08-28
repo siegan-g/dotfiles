@@ -1,0 +1,393 @@
+[appindicator]
+icon-brightness=0.0
+icon-contrast=0.0
+icon-opacity=240
+icon-saturation=0.0
+icon-size=0
+legacy-tray-enabled=true
+tray-pos='right'
+
+[arcmenu]
+force-menu-location='Off'
+menu-button-appearance='None'
+menu-layout='Runner'
+prefs-visible-page=0
+recently-installed-apps=['org.rncbc.qtractor.desktop', 'NieRAutomata.desktop']
+runner-position='Centered'
+runner-search-display-style='List'
+runner-show-frequent-apps=true
+search-entry-border-radius=(true, 25)
+show-activities-button=true
+update-notifier-project-version=66
+
+[blur-my-shell]
+pipelines={'pipeline_default': {'name': <'Default'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000000'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>]>}, 'pipeline_default_rounded': {'name': <'Default rounded'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000001'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>, <{'type': <'corner'>, 'id': <'effect_000000000002'>, 'params': <{'radius': <24>}>}>]>}}
+settings-version=2
+
+[blur-my-shell/appfolder]
+blur=true
+brightness=0.59999999999999998
+sigma=30
+
+[blur-my-shell/coverflow-alt-tab]
+pipeline='pipeline_default'
+
+[blur-my-shell/dash-to-dock]
+blur=false
+brightness=0.59999999999999998
+override-background=true
+pipeline='pipeline_default_rounded'
+sigma=30
+static-blur=true
+style-dash-to-dock=0
+
+[blur-my-shell/lockscreen]
+pipeline='pipeline_default'
+
+[blur-my-shell/overview]
+blur=true
+pipeline='pipeline_default_rounded'
+style-components=0
+
+[blur-my-shell/panel]
+blur=false
+brightness=0.59999999999999998
+pipeline='pipeline_default'
+sigma=30
+
+[blur-my-shell/screenshot]
+pipeline='pipeline_default'
+
+[blur-my-shell/window-list]
+brightness=0.59999999999999998
+sigma=30
+
+[dynamic-panel]
+auto-background=false
+blur=false
+dark-bg-color='rgb(0,0,0)'
+detection-mode=0
+duration=250
+float-width=78
+solid-type=0
+
+[forge]
+css-last-update=uint32 37
+css-updated='1756139509087'
+tabbed-tiling-mode-enabled=false
+tiling-mode-enabled=false
+
+[forge/keybindings]
+con-split-horizontal=['<Super>z']
+con-split-layout-toggle=['<Super>g']
+con-split-vertical=['<Super>v']
+con-stacked-layout-toggle=['<Shift><Super>s']
+con-tabbed-layout-toggle=['<Shift><Super>t']
+con-tabbed-showtab-decoration-toggle=['<Control><Alt>y']
+focus-border-toggle=['<Super>x']
+mod-mask-mouse-tile='Super'
+prefs-tiling-toggle=['<Super>w']
+window-focus-down=['<Control>j']
+window-focus-left=['<Control>h']
+window-focus-right=['<Control>l']
+window-focus-up=['<Control>k']
+window-gap-size-decrease=['<Shift><Control>minus']
+window-gap-size-increase=['<Shift><Control>plus']
+window-move-down=['<Shift><Control>j']
+window-move-left=['<Shift><Control>h']
+window-move-right=['<Shift><Control>l']
+window-move-up=['<Shift><Control>k']
+window-resize-bottom-decrease=['<Shift><Control><Super>i']
+window-resize-bottom-increase=['<Control><Super>u']
+window-resize-left-decrease=['<Shift><Control><Super>o']
+window-resize-left-increase=['<Control><Super>y']
+window-resize-right-decrease=['<Shift><Control><Super>y']
+window-resize-right-increase=['<Control><Super>o']
+window-resize-top-decrease=['<Shift><Control><Super>u']
+window-resize-top-increase=['<Control><Super>i']
+window-snap-center=['<Control><Alt>c']
+window-snap-one-third-left=['<Control><Alt>d']
+window-snap-one-third-right=['<Control><Alt>g']
+window-snap-two-third-left=['<Control><Alt>e']
+window-snap-two-third-right=['<Control><Alt>t']
+window-swap-down=['<Control><Super>j']
+window-swap-last-active=['<Super>Return']
+window-swap-left=['<Control><Super>h']
+window-swap-right=['<Control><Super>l']
+window-swap-up=['<Control><Super>k']
+window-toggle-always-float=['<Shift><Super>c']
+window-toggle-float=['<Super>c']
+workspace-active-tile-toggle=['<Shift><Super>w']
+
+[gsconnect]
+devices=['b6c5013e88474f358b1c5e5851957a54']
+enabled=true
+keep-alive-when-locked=true
+name='hal9000'
+
+[gsconnect/device/b6c5013e88474f358b1c5e5851957a54]
+incoming-capabilities=['kdeconnect.battery', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.contacts.request_all_uids_timestamps', 'kdeconnect.contacts.request_vcards_by_uid', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.action', 'kdeconnect.notification.reply', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.sftp.request', 'kdeconnect.share.request', 'kdeconnect.share.request.update', 'kdeconnect.sms.request', 'kdeconnect.sms.request_attachment', 'kdeconnect.sms.request_conversation', 'kdeconnect.sms.request_conversations', 'kdeconnect.systemvolume', 'kdeconnect.telephony.request', 'kdeconnect.telephony.request_mute']
+last-connection='lan://192.168.1.112:1716'
+name='Galaxy S23 Ultra'
+outgoing-capabilities=['kdeconnect.battery', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report', 'kdeconnect.contacts.response_uids_timestamps', 'kdeconnect.contacts.response_vcards', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.echo', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.presenter', 'kdeconnect.runcommand.request', 'kdeconnect.sftp', 'kdeconnect.share.request', 'kdeconnect.sms.attachment_file', 'kdeconnect.sms.messages', 'kdeconnect.systemvolume.request', 'kdeconnect.telephony']
+supported-plugins=['battery', 'clipboard', 'connectivity_report', 'contacts', 'findmyphone', 'mousepad', 'mpris', 'notification', 'ping', 'presenter', 'runcommand', 'sftp', 'share', 'sms', 'systemvolume', 'telephony']
+type='phone'
+
+[gsconnect/preferences]
+window-maximized=true
+window-size=(821, 460)
+
+[just-perfection]
+accessibility-menu=true
+activities-button=true
+background-menu=true
+clock-menu=true
+clock-menu-position=1
+controls-manager-spacing-size=0
+dash=true
+dash-app-running=true
+dash-icon-size=0
+dash-separator=true
+double-super-to-appgrid=true
+invert-calendar-column-items=false
+keyboard-layout=true
+max-displayed-search-results=0
+notification-banner-position=2
+osd=true
+overlay-key=true
+panel=true
+panel-in-overview=true
+panel-notification-icon=true
+panel-size=0
+power-icon=false
+quick-settings=true
+quick-settings-airplane-mode=false
+quick-settings-dark-mode=false
+quick-settings-night-light=true
+ripple-box=false
+screen-recording-indicator=false
+screen-sharing-indicator=false
+search=true
+show-apps-button=false
+startup-status=1
+support-notifier-showed-version=34
+support-notifier-type=0
+theme=false
+window-demands-attention-focus=false
+window-maximized-on-create=false
+window-menu-take-screenshot-button=false
+window-picker-icon=true
+window-preview-caption=true
+window-preview-close-button=false
+workspace=true
+workspace-background-corner-size=0
+workspace-peek=true
+workspace-popup=true
+workspace-switcher-should-show=false
+workspace-wrap-around=false
+workspaces-in-app-grid=true
+
+[mpris-label]
+auto-switch-to-most-recent=true
+extension-place='center'
+show-icon=''
+
+[openbar]
+accent-color=['0.749', '0.749', '0.749']
+apply-accent-shell=false
+apply-all-shell=false
+apply-menu-notif=false
+apply-menu-shell=false
+autofg-bar=true
+autofg-menu=false
+autohg-bar=false
+autohg-menu=false
+autotheme-font=false
+bartype='Floating'
+bcolor=['0.000', '0.000', '0.000']
+bg-change=false
+bgalpha=0.90000000000000002
+bgalpha-wmax=1.0
+bgalpha2=0.46000000000000002
+bgcolor=['0.000', '0.000', '0.000']
+bgcolor-wmax=['0.000', '0.000', '0.000']
+bgcolor2=['0.000', '0.000', '0.000']
+bguri='file:///home/jinji/.local/share/backgrounds/2025-08-23-01-41-13-background.jpg'
+boxalpha=0.0
+boxcolor=['0.000', '0.000', '0.000']
+bradius=30.0
+buttonbg-wmax=true
+bwidth=0.0
+candyalpha=0.92000000000000004
+candybar=false
+color-scheme='prefer-dark'
+count1=301276
+count10=3129
+count11=2575
+count12=2420
+count2=166299
+count3=58538
+count4=34362
+count5=16013
+count6=14530
+count7=9794
+count8=8509
+count9=7555
+cust-margin-wmax=true
+dark-accent-color=['0.749', '0.749', '0.749']
+dark-bcolor=['0.000', '0.000', '0.000']
+dark-bgcolor=['0.000', '0.000', '0.000']
+dark-bgcolor-wmax=['0.000', '0.000', '0.000']
+dark-bgcolor2=['0.000', '0.000', '0.000']
+dark-bguri='file:///home/jinji/.local/share/backgrounds/2025-08-23-01-41-13-background.jpg'
+dark-boxcolor=['0.000', '0.000', '0.000']
+dark-hcolor=['0.749', '0.749', '0.749']
+dark-iscolor=['0.000', '0.000', '0.000']
+dark-mbgcolor=['0.000', '0.000', '0.000']
+dark-mhcolor=['1.000', '1.000', '1.000']
+dark-mscolor=['1.000', '1.000', '1.000']
+dark-mshcolor=['1.000', '1.000', '1.000']
+dark-palette1=['191', '191', '191']
+dark-palette10=['156', '156', '156']
+dark-palette11=['140', '140', '140']
+dark-palette12=['148', '148', '148']
+dark-palette2=['34', '34', '34']
+dark-palette3=['172', '172', '172']
+dark-palette4=['164', '164', '164']
+dark-palette5=['117', '117', '117']
+dark-palette6=['76', '76', '76']
+dark-palette7=['84', '84', '84']
+dark-palette8=['92', '92', '92']
+dark-palette9=['100', '100', '100']
+dashdock-style='Default'
+default-font='Sans 12'
+fgcolor=['1.0', '1.0', '1.0']
+fitts-widgets=true
+font='JetBrains Mono 12'
+gradient=false
+gradient-direction='horizontal'
+hcolor=['0.749', '0.749', '0.749']
+heffect=false
+height=40.0
+hpad=0.0
+hscd-color=['0', '0.7', '0.75']
+import-export=false
+isalpha=1.0
+iscolor=['0.000', '0.000', '0.000']
+light-bgcolor=['0.000', '0.000', '0.000']
+light-bgcolor-wmax=['0.000', '0.000', '0.000']
+light-bguri='file:///home/jinji/.local/share/backgrounds/2025-08-23-01-41-13-background.jpg'
+light-boxcolor=['0.000', '0.000', '0.000']
+light-iscolor=['0.000', '0.000', '0.000']
+light-palette1=['191', '191', '191']
+light-palette10=['156', '156', '156']
+light-palette11=['140', '140', '140']
+light-palette12=['148', '148', '148']
+light-palette2=['34', '34', '34']
+light-palette3=['172', '172', '172']
+light-palette4=['164', '164', '164']
+light-palette5=['117', '117', '117']
+light-palette6=['76', '76', '76']
+light-palette7=['84', '84', '84']
+light-palette8=['92', '92', '92']
+light-palette9=['100', '100', '100']
+margin=6.5
+mbalpha=0.0
+mbcolor=['1.0', '1.0', '1.0']
+mbgcolor=['0.000', '0.000', '0.000']
+menustyle=false
+mfgcolor=['1.0', '1.0', '1.0']
+mhalpha=0.0
+mhcolor=['1.000', '1.000', '1.000']
+monitor-height=1080
+monitor-width=1920
+msalpha=0.68999999999999995
+mscolor=['1.000', '1.000', '1.000']
+mshalpha=0.0
+mshcolor=['1.000', '1.000', '1.000']
+neon=false
+palette1=['191', '191', '191']
+palette10=['156', '156', '156']
+palette11=['140', '140', '140']
+palette12=['148', '148', '148']
+palette2=['34', '34', '34']
+palette3=['172', '172', '172']
+palette4=['164', '164', '164']
+palette5=['117', '117', '117']
+palette6=['76', '76', '76']
+palette7=['84', '84', '84']
+palette8=['92', '92', '92']
+palette9=['100', '100', '100']
+pause-reload=false
+position='Top'
+reloadstyle=false
+set-bottom-margin=false
+set-fullscreen=true
+set-notif-position=true
+set-overview=false
+shadow=false
+shalpha=0.0
+shcolor=['0', '0', '0']
+smbgcolor=['0.125', '0.125', '0.125']
+trigger-reload=true
+vw-color=['0', '0.7', '0.75']
+winbcolor=['0', '0.7', '0.75']
+wmax-hbarhint=false
+wmaxbar=true
+
+[paperwm]
+cycle-height-steps=[0.38195000000000001, 0.5, 0.61804000000000003]
+horizontal-margin=10
+last-used-display-server='Wayland'
+open-window-position=0
+restore-attach-modal-dialogs=''
+restore-edge-tiling=''
+restore-keybinds='{}'
+restore-workspaces-only-on-primary=''
+selection-border-radius-top=0
+selection-border-size=0
+vertical-margin=10
+vertical-margin-bottom=10
+window-gap=10
+
+[paperwm/workspaces]
+list=['d100ffc6-c144-48db-8d9a-6f09096fd3e4', '8ff27523-f894-4c73-8fea-c49b54b72e5f', 'd463b830-a8f7-4c84-9552-e2d8b08dcd21', 'a1d557f7-362e-4a45-b2a4-a24413262ce3']
+
+[paperwm/workspaces/8ff27523-f894-4c73-8fea-c49b54b72e5f]
+index=1
+
+[paperwm/workspaces/a1d557f7-362e-4a45-b2a4-a24413262ce3]
+index=3
+
+[paperwm/workspaces/d100ffc6-c144-48db-8d9a-6f09096fd3e4]
+index=0
+
+[paperwm/workspaces/d463b830-a8f7-4c84-9552-e2d8b08dcd21]
+index=2
+
+[rounded-window-corners-reborn]
+settings-version=uint32 7
+tweak-kitty-terminal=false
+
+[search-light]
+animation-speed=100.0
+blur-brightness=0.59999999999999998
+blur-sigma=30.0
+border-radius=7.0
+entry-font-size=1
+monitor-count=1
+preferred-monitor=0
+scale-height=0.10000000000000001
+scale-width=0.10000000000000001
+shortcut-search=['<Shift>exclam']
+show-panel-icon=false
+
+[user-theme]
+name='Orchis-Grey-Dark'
+
+[vertical-workspaces]
+center-app-grid=false
+center-search=false
+overlay-key-primary=0
+search-width-scale=92
+ws-thumbnails-position=0
