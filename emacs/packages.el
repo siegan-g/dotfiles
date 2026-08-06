@@ -66,7 +66,7 @@
 	  treemacs-show-hidden-files t)
     (treemacs-follow-mode t)
     (treemacs-filewatch-mode t)
-  ))
+    ))
 
 (use-package treemacs-evil
   :after (treemacs evil)
@@ -97,9 +97,9 @@
 	 (markdown-mode . eglot-ensure)))
 
 (use-package corfu
-:straight t
-:init
-(global-corfu-mode))
+  :straight t
+  :init
+  (global-corfu-mode))
 
 ;; themes
 (use-package kaolin-themes
