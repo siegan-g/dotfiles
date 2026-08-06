@@ -25,6 +25,8 @@
 
 (load (expand-file-name "packages.el" user-emacs-directory))
 
+(setq package-quickstart t)
+
 ;; ############################
 ;; Configuration 
 ;; ############################
