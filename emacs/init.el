@@ -44,4 +44,11 @@
 
 (which-key-mode 1)
 
+;; dired will auto-fill a target location based on open buffers
 (setq dired-dwim-target t)
+
+(setq browse-url-generic-program "explorer.exe")
+
+(setq browse-url-browser-function 'browse-url-generic)
+
+(setq confirm-kill-emacs #'yes-or-no-p)
