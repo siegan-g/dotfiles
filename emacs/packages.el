@@ -119,6 +119,14 @@
   :init
   (doom-modeline-mode 1))
 
+;; windows
+(use-package olivetti
+  :straight t)
+
+(use-package spacious-padding 
+  :straight t
+  :init
+  (spacious-padding-mode))
 
 ;; TODO
 ;; Workspaces
@@ -138,7 +146,3 @@
   :hook (dashboard-mode-hook .(lambda () (display-line-numbers-mode -1)))
   :config
   (dashboard-setup-startup-hook))
-
-;; centre text - zen mode in vscode
-(use-package olivetti
-  :straight t)
