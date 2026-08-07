@@ -14,7 +14,9 @@
   :straight t
   :after evil
   :init
-  (evil-collection-init))
+  (evil-collection-init)
+  :custom
+  (evil-collection-setup-minibuffer t))
 
 (use-package evil-commentary
   :straight t
