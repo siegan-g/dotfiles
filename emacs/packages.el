@@ -128,7 +128,9 @@
 (use-package doom-modeline
   :straight t
   :init
-  (doom-modeline-mode 1))
+  (doom-modeline-mode 1)
+  :config
+  (setq doom-modeline-modal-modern-icon nil))
 
 ;; windows
 (use-package olivetti
