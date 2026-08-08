@@ -156,6 +156,10 @@
 ;; other
 (use-package dashboard
   :straight t
-  :hook (dashboard-mode-hook .(lambda () (display-line-numbers-mode -1)))
+  :custom
+  (dashboard-vertically-center-content t)
+  (dashboard-center-content t)
+  :hook
+  (dashboard-mode-hook .(lambda () (display-line-numbers-mode -1)))
   :config
   (dashboard-setup-startup-hook))
