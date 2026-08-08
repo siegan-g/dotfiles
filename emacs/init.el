@@ -40,8 +40,6 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 
-(set-face-attribute 'default nil :height 150)
-
 (which-key-mode 1)
 
 ;; dired will auto-fill a target location based on open buffers
@@ -55,4 +53,4 @@
 
 (setq face-attribute 'default nil
       :family "RobotoMono Nerd Font Mono"
-      :height 120)
+      :height 150)
