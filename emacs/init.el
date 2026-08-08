@@ -52,3 +52,7 @@
 (setq browse-url-browser-function 'browse-url-generic)
 
 (setq confirm-kill-emacs #'yes-or-no-p)
+
+(setq face-attribute 'default nil
+      :family "RobotoMono Nerd Font Mono"
+      :height 120)
