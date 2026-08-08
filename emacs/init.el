@@ -51,6 +51,4 @@
 
 (setq confirm-kill-emacs #'yes-or-no-p)
 
-(setq face-attribute 'default nil
-      :family "RobotoMono Nerd Font Mono"
-      :height 150)
+(set-face-attribute 'default nil :family "RobotoMono Nerd Font Mono" :height 150)
