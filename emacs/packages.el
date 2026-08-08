@@ -107,14 +107,23 @@
   (global-corfu-mode))
 
 ;; themes
-(use-package kaolin-themes
-  :config
-  (load-theme `kaolin-dark t)
-  (kaolin-treemacs-theme))
-
-(use-package all-the-icons
+(use-package doom-themes
   :straight t
-  :if (display-graphic-p))
+  :custom
+  (doom-themes-enable-bold t)
+  (doom-themes-enable-italics t)
+  (doom-themes-treemacs-theme "doom-atom")
+  :config
+  (load-theme 'doom-one t)
+  (doom-themes-visual-bell-config)
+  (doom-themes-treemacs-config)
+  (doom-themes-org-config))
+  
+(use-package nerd-icons
+  :straight t
+  :custom
+  (nerd-icon-font-family "RobotoMono Nerd Font Mono"))
+
 
 (use-package doom-modeline
   :straight t
