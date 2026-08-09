@@ -159,6 +159,22 @@
   :custom
   (dashboard-vertically-center-content t)
   (dashboard-center-content t)
+  (dashboard-startup-banner (expand-file-name "misc/philanthropy.png" user-emacs-directory))
+  (dashboard-banner-logo-title "TO LET THE WORLD BE")
+  (dashboard-items '((recents . 5)
+		     (bookmarks . 5)
+		     (projects . 5)
+		     (agenda . 5)))
+  (dashboard-startupify-list '(dashboard-insert-banner
+			       dashboard-insert-newline
+			       dashboard-insert-banner-title
+			       dashboard-insert-newline
+			       dashboard-insert-init-info
+			       dashboard-insert-newline
+			       dashboard-insert-navigator
+			       dashboard-insert-newline
+			       dashboard-insert-items
+			       ))
   :hook
   (dashboard-mode-hook .(lambda () (display-line-numbers-mode -1)))
   :config
