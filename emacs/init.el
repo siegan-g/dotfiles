@@ -42,6 +42,7 @@
 
 (which-key-mode 1)
 
+(electric-pair-mode 1)
 ;; dired will auto-fill a target location based on open buffers
 (setq dired-dwim-target t)
 
