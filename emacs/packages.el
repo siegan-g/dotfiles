@@ -60,9 +60,8 @@
 ;; project exploreer
 (use-package treemacs
   :straight t
-  :defer t
   :init
-  (with-eval-after-load `winum
+  (with-eval-after-load 'winum
     (define-key winum-keymap(kbd "M-0") #'treemacs-select-window))
   :config
   (progn
@@ -91,24 +90,55 @@
 (use-package vterm
   :straight t)
 
-;; lsp
-;; (straight-use-package 'project)
-;; (straight-use-package 'flymake)
-
-(use-package eglot
-  :straight (:type built-in)
-  :hook ((python-mode . eglot-ensure)
-	 (rust-mode . eglot-ensure)
-	 (markdown-mode . eglot-ensure)))
-
-(use-package corfu
+;; lsp-mode and extensions
+(use-package lsp-mode
   :straight t
   :init
-  (global-corfu-mode))
+  (setq lsp-keymap-prefix "C-c l")
+  (setq lsp-modeline-code-action-fallback-icon "")
+  :hook(
+  (python-mode . lsp-deferred)
+  (lsp-mode . lsp-enable-which-key-integration))
+  :commands (lsp lsp-deferred))
+
+(use-package lsp-ui
+  :straight t
+  :commands lsp-ui-mode)
+
+(use-package lsp-ivy
+  :straight t
+  :commands lsp-ivy-workspace-symbol)
+
+(use-package lsp-treemacs
+  :straight t
+  :after (lsp-mode treemacs)
+  :commands lsp-treemacs-errors-list)
+
+(use-package dap-mode
+  :straight t
+  :after lsp-mode
+  :config
+  (dap-auto-configure-mode +1)
+  (require 'dap-python))
+
+(use-package company
+  :straight t
+  :init
+  (add-hook 'after-init-hook 'global-company-mode)
+  :config
+  (setq company-minimum-prefix-length 2
+	company-idle-delay 0.0))
 
 ;; themes
+
+(use-package nerd-icons
+  :straight t
+  :custom
+  (nerd-icon-font-family "RobotoMono Nerd Font Mono"))
+
 (use-package doom-themes
   :straight t
+  :after nerd-icons
   :custom
   (doom-themes-enable-bold t)
   (doom-themes-enable-italics t)
@@ -119,12 +149,6 @@
   (doom-themes-treemacs-config)
   (doom-themes-org-config))
   
-(use-package nerd-icons
-  :straight t
-  :custom
-  (nerd-icon-font-family "RobotoMono Nerd Font Mono"))
-
-
 (use-package doom-modeline
   :straight t
   :init
